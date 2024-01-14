@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display:wght@700&display=swap');
+
+body {
+    background-color:white;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+main {
+    display: grid;
+    grid-template: auto auto / auto;
+    text-align: center;
+}
+
+header {
+    background-color:maroon;
+    display: grid;
+    grid-template: auto / 1fr 1fr;
+    color:  white;
+    margin: 10px 10px 20px 10px;
+    place-items:center;
+}
+
+header img {
+    margin: 30px;
+    width: 256px;
+    height: 256px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    text-align: center;
+    padding: 5px 15px;
+    margin: 10px;
+    background-color: maroon;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+.card {
+    background-color:darkgrey;
+    margin: 0 0 15px 0;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.card p {
+    text-align: center;
+}
+
+.card h3 {
+    background-color: maroon;
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+
+footer {
+    background-color: maroon;
+    color: white;
+    padding: 20px;
+}
+
+p, a {
+    font-family: 'PT Sans';
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display'
+}
+
+ul {
+    list-style-type: none;
+}
