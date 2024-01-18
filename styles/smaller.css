@@ -1,0 +1,13 @@
+@media screen and (max-width: 500px) {
+    body {
+        max-width: 90%;
+    }
+    nav a {
+        display: flex;
+    }
+    header img {
+        margin: 20px;
+        width: 128px;
+        height: 128px;
+    }
+}
