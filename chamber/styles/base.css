@@ -26,18 +26,37 @@ h1, h2 {
 }
 
 main {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+#landing-content {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#hero {
+    max-width: 90%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+
+}
+
 .card {
-    border: 1px solid #ddd;
-    padding: 15px;
     margin-bottom: 20px;
     margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.card, #hero {
+    border: 1px solid #ddd;
+    padding: 15px;
 }
 
 .scenario-section {
