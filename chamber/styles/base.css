@@ -2,35 +2,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root {
-    --theme: blue;
+    --theme: #3498db;
+    --complement: #312F2F;
+    --textColor: black;
+    --page-background:  #f5f5f5;
+    --card-background: white;
+    --spotlight-color:#f0f0f0;
+    
 }
 /* Variables */
 
-body {
+body, header, footer {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f5f5f5;
-    margin: 0;
 }
 
-header {
-    background-color: #3498db;
-    color: #fff;
+p {
+    color: var(--textColor);
+}
+
+body {
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+    background-color: var(--page-background);
+}
+
+header, footer p {
+    background-color: var(--theme);
+    color: white;
     padding: 20px;
     text-align: center;
 }
 
-h1, h2 {
+h1, h2, #invitation {
     font-family: 'Montserrat', sans-serif;
+}
+
+nav a {
+    color: white;
+    font-size: 1.2rem;
+    padding: 8px;
+    margin-right: 35px;
+    border: 2px solid white;
+    border-radius: 8px;
+    text-decoration: none;
 }
 
 main {
     max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: var(--card-background);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
 }
 
 #landing-content {
@@ -52,6 +84,7 @@ main {
     margin-top: 20px;
     margin-left: 15px;
     margin-right: 15px;
+    background-color: var(--card-background);
 }
 
 .card, #hero {
@@ -59,18 +92,120 @@ main {
     padding: 15px;
 }
 
-.scenario-section {
-    background-color: #ecf0f1;
-    padding: 15px;
-    border-radius: 5px;
+#spotlight-content {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
 }
 
-footer {
+.spotlight-item { 
+
+    margin-right: 20px;
+    min-width: 250px;
+    background-color: var(--spotlight-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight-item h2 {
+    margin-top: 0;
+}
+
+#spotlight-title {
     text-align: center;
-    padding: 10px;
-    background-color: #3498db;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-bottom: 30px;
+}
+
+#copyright {
+    text-align: left;
+}
+
+#invitation {
+    text-align: center;
+}
+
+#invitation a {
+    color: white;
+    background-color: rgba(1,1,1,0.4);
+    font-size: 2rem;
+    padding: 9px;
+    border: 3px solid white;
+    border-radius: 8px;
+    text-decoration: none;
+    position:relative;  
+    bottom: 15rem;
+    transition: 0.3s;
+    box-shadow:6px 4px 4px rgba(1,1,1,0.4);
+}
+
+#invitation a:hover {
+    background-color: rgba(1,1,1,0.7);
+    transition: 0.3s;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: fixed;
+  display: inline-block;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--complement);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ccc;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
