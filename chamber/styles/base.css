@@ -4,7 +4,7 @@
 :root {
     --theme: #3498db;
     --complement: #312F2F;
-    --textColor: black;
+    --text-color: black;
     --page-background:  #f5f5f5;
     --card-background: white;
     --spotlight-color:#f0f0f0;
@@ -17,7 +17,7 @@ body, header, footer {
 }
 
 p {
-    color: var(--textColor);
+    color: var(--text-color);
 }
 
 body {

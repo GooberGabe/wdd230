@@ -1,14 +1,13 @@
-const themeButton = document.querySelector(".switch");
-console.log(document.querySelector("body"));
-
-const style = window.getComputedStyle(document.body);
+const themeButton = document.querySelector("#themeToggle");
+const r = document.querySelector(':root');
+var rs = getComputedStyle(r);
 
 var theme = "light";
 
-var defaultTextColor = style.getPropertyValue("--text-color");
-var defaultBackgroundColor = style.getPropertyValue("--page-background");
-var defaultCardBackground = style.getPropertyValue("--card-background");
-var defaultSpotlightColor = style.getPropertyValue("--spotlight-color");
+var defaultTextColor = rs.getPropertyValue("--text-color");
+var defaultBackgroundColor = rs.getPropertyValue("--page-background");
+var defaultCardBackground = rs.getPropertyValue("--card-background");
+var defaultSpotlightColor = rs.getPropertyValue("--spotlight-color");
 
 darkTextColor = "white";
 darkBackgroundColor = "#2B2B2B";
@@ -19,13 +18,17 @@ themeButton.addEventListener("click", () => {
     
     if (theme == "light") {
         theme = "dark";
-        style.color = "black";
+        r.style.setProperty('--text-color', darkTextColor);
+        r.style.setProperty('--page-background', darkBackgroundColor);
+        r.style.setProperty('--card-background', darkCardBackground);
+        r.style.setProperty('--spotlight-color', darkSpotlightColor);
     }
     else {
         theme = "light";
-        style.setProperty('--text-color', defaultTextColor);
-        style.setProperty('--page-background', defaultBackgroundColor);
-        style.setProperty('--card-background', defaultCardBackground);
-        style.setProperty('--spotlight-color', defaultSpotlightColor);
+        r.style.setProperty('--text-color', defaultTextColor);
+        r.style.setProperty('--page-background', defaultBackgroundColor);
+        r.style.setProperty('--card-background', defaultCardBackground);
+        r.style.setProperty('--spotlight-color', defaultSpotlightColor);
     }
+    console.log(true)
 })
