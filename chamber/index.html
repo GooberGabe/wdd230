@@ -11,7 +11,7 @@
     <link href="styles/larger.css" rel="stylesheet">
     <link href="styles/larger.css" rel="stylesheet">
 
-    <link rel="icon" href="images/favicon-16x16.png">
+    <link rel="icon" href="images/favicon-16x16.webp">
 
     <meta property="og:title" content="Springboro Chamber of Commerce">
     <meta property="og:type" content="website" />
@@ -34,7 +34,14 @@
         </label>
     </header>
     <main>
-        <img src="images/SpringboroOH.jpg" id="hero">
+        <!-- <img src="images/SpringboroOH.jpg" id="hero"> -->
+        <picture>
+            <source media="(max-width: 500px)" srcset="images/wdd230-org-small.webp" />
+            <source media="(max-width: 800px)" srcset="images/wdd230-org-medium.webp" />
+            <source media="(min-width: 1000px)" srcset="images/wdd230-org.webp" />
+            <img src="" alt="Placeholder" id="hero"/>
+        </picture>
+
         <div id="invitation">
             <a href="Invitation">Join the Chamber</a>
         </div>
