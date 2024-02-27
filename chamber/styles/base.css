@@ -79,6 +79,25 @@ footer {
 
 }
 
+#sidebar {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+figure img {
+    width: 100%;
+}
+
+figure img:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+figcaption {
+    font-style: italic;
+    text-align: center;
+}
+
 .card {
     margin-bottom: 20px;
     margin-top: 20px;
@@ -90,6 +109,11 @@ footer {
 .card, #hero {
     border: 1px solid #ddd;
     padding: 15px;
+}
+
+.card:nth-child(1) {
+    grid-row: 1 / 5;
+    grid-column: 2 / 3;
 }
 
 #spotlight-content {

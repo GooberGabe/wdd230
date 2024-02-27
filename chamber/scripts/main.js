@@ -30,5 +30,4 @@ themeButton.addEventListener("click", () => {
         r.style.setProperty('--card-background', defaultCardBackground);
         r.style.setProperty('--spotlight-color', defaultSpotlightColor);
     }
-    console.log(true)
 })
