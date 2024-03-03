@@ -78,7 +78,7 @@ footer {
     padding: 20px;
 }
 
-p, a {
+p, a, label, input {
     font-family: 'PT Sans';
 }
 
