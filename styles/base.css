@@ -78,7 +78,7 @@ footer {
     padding: 20px;
 }
 
-p, a, label, input {
+p, a, label, input, li {
     font-family: 'PT Sans';
 }
 
@@ -88,6 +88,12 @@ h1, h2, h3 {
 
 ul {
     list-style-type: none;
+    text-align: left;
+}
+
+li {
+    margin: 12px;
+    font-size: 1.3rem;
 }
 
 #menu {

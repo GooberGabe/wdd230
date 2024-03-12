@@ -10,7 +10,7 @@ async function getLinks()
 
 function displayLinks(data) 
 {
-    for (let i = 0; i < data.lessons; i++) 
+    for (let i = 0; i < data.lessons.length; i++) 
     {
         const datum = data.lessons[i];
         const li = document.createElement("li");
@@ -22,8 +22,10 @@ function displayLinks(data)
             const l = datum.links[i2];
             const link = document.createElement("a");
             link.href = l.url;
-            link.innerHTML = l.title+(i2 == datum.links.length - 1 ? " | " : "");
+            link.innerHTML = l.title+(i2 == datum.links.length - 1 ? "" : " | ");
             li.appendChild(link);
         }
     }
 }
+
+getLinks();
