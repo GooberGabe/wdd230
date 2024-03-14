@@ -116,7 +116,7 @@ figcaption {
     grid-column: 2 / 3;
 }
 
-#spotlight-content {
+#spotlight-content, #members {
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;

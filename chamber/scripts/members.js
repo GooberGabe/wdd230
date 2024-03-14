@@ -15,16 +15,15 @@ function displayMembers(data)
 
         const member = data.members[i];
         const sec = document.createElement("section");
-        sec.classList.append("card");
+        sec.classList.add("card");
         document.querySelector("#members").appendChild(sec);
 
-        for (let i2 = 0; i2 < member.images; i2++)
+        for (let i2 = 0; i2 < member.images.length; i2++)
         {
             const imgUrl = member.images[i2];
             const img = document.createElement("img");
             img.src = imgUrl;
             img.width = 350;
-            img.height = 350;
             sec.appendChild(img);
         }
 
@@ -45,15 +44,15 @@ function displayMembers(data)
         sec.appendChild(p3);
 
         const p4 = document.createElement("p");
-        p4.innerHTML = ["Basic","Bronze","Silver","Gold"][member.membership]+" Member";
+        p4.innerHTML = ["Basic","Bronze","Silver","Gold"][member.membershipLevel]+" Member";
         sec.appendChild(p4);
 
-        for (let i2 = 0; i2 < member.urls; i2++)
+        for (let i2 = 0; i2 < member.urls.length; i2++)
         {
             const l = member.urls[i2];
             const link = document.createElement("a");
-            link.href = l.url;
-            link.innerHTML = l.title+(i2 == member.urls.length - 1 ? "" : " | ");
+            link.href = l;
+            link.innerHTML = l;
             p3.appendChild(link);
         }
     }
