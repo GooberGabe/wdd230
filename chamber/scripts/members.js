@@ -23,7 +23,7 @@ function displayMembers(data)
             const imgUrl = member.images[i2];
             const img = document.createElement("img");
             img.src = imgUrl;
-            img.width = 350;
+            img.style.maxWidth = "270px";
             sec.appendChild(img);
         }
 
