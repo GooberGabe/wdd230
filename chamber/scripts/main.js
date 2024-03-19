@@ -31,3 +31,26 @@ themeButton.addEventListener("click", () => {
         r.style.setProperty('--spotlight-color', defaultSpotlightColor);
     }
 })
+
+function banner() {
+    let date = new Date();
+    if (date.getDay() == 1 || date.getDay() == 2 || date.getDay() == 3) 
+    {
+        const banner = document.querySelector("#banner");
+        console.log("yarg")
+        const h2 = document.createElement("h2");
+        h2.innerHTML = "Join us for the chamber of commerce meet and greet on Wednesday at 7:00 p.m!"
+        h2.style.textAlign = "center";
+        const x = document.createElement("input");
+        x.type = "button";
+        x.style.border = "none";
+        x.value = "X"
+        x.addEventListener('click', () => { 
+            banner.remove();
+        });
+        banner.appendChild(x);
+        banner.appendChild(h2);
+    }
+}
+
+banner();
