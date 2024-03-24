@@ -48,21 +48,12 @@ nav a {
     text-decoration: none;
 }
 
-main {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: var(--card-background);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 footer {
     text-align: center;
     padding: 10px;
     background-color: #3498db;
     color: #fff;
     bottom: 0;
-    width: 100%;
 }
 
 #landing-content {
@@ -131,8 +122,8 @@ figcaption {
 
 .spotlight-item { 
 
-    margin-right: 20px;
-    min-width: 250px;
+    min-width: 200px;
+    margin-bottom: 14px;
     background-color: var(--spotlight-color);
     padding: 20px;
     border-radius: 10px;
@@ -333,4 +324,8 @@ input[type="submit"]:hover {
 .benefit h3 {
     border-top: 2px solid black;
     font-style:italic;
+}
+
+#menu {
+    display: none;
 }

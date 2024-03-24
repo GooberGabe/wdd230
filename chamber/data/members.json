@@ -27,7 +27,7 @@
             [
                 "images/pizza.webp"
             ],
-            "membershipLevel":2
+            "membershipLevel":3
         },
         {
             "name":"Heather's Caramel Apples",
@@ -41,7 +41,7 @@
             [
                 "images/heathers.png"
             ],
-            "membershipLevel":1
+            "membershipLevel":2
         },
         {
             "name":"Dorothy Lane Market",
