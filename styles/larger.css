@@ -1,0 +1,63 @@
+@media screen and (min-width: 800px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    header img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    nav a {
+        padding: 10px 15px;
+        display: inline-block;
+    }
+
+    main {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 1.8em;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card h3 {
+        font-size: 1.4em;
+    }
+
+    ul {
+        max-width: 300px;
+    }
+
+    footer {
+        margin-top: 20px;
+        padding: 20px;
+        font-size: 1em;
+    }
+}
