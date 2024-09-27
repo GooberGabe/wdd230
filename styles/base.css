@@ -18,7 +18,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #3498db;
+    background-color: #2573a7;
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 15px;
@@ -93,7 +93,7 @@ h2 {
 
 .card h3 {
     font-family: 'Lora', serif;
-    color: #3498db;
+    color: #2573a7;
     margin-bottom: 10px;
     font-size: 1.2em;
 }
@@ -114,7 +114,7 @@ footer {
     text-align: center;
     margin-top: 15px;
     padding: 15px;
-    background-color: #3498db;
+    background-color: #2573a7;
     color: white;
     border-radius: 8px;
     font-size: 0.9em;
