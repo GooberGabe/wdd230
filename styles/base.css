@@ -44,10 +44,28 @@ nav {
     padding: 5px;
     border-radius: 8px;
     margin-bottom: 15px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    position: relative;
+}
+
+#hamburger-menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+
+#nav-menu {
+    display: none;
+    list-style-type: none;
+}
+
+#nav-menu.show {
+    display: block;
 }
 
 nav a {
