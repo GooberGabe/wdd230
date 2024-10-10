@@ -1,0 +1,74 @@
+@media screen and (max-width: 500px) {
+    body {
+        max-width: 90%;
+    }
+    nav {
+        display: none;
+    }
+    nav.show {
+        display: block;
+    }
+
+    nav a {
+        display: flex;
+    }
+
+    #menu {
+        display:inline;
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: #000;
+    }
+
+    
+    #menu::before {
+        color: white;
+        font-size: 1.3rem;
+        padding: 8px;
+    
+        text-decoration: none;
+        content: '☰';
+    }
+
+    #menu.show::before {
+        content: "❎";
+    }
+
+    #landing-content {
+        display:flex;
+        flex-direction: column;
+    }
+
+    #spotlight-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    #invitation a {
+        color: white;
+        background-color: rgba(1,1,1,0.4);
+        font-size: 1.5rem;
+        padding: 9px;
+        border: 3px solid white;
+        border-radius: 8px;
+        text-decoration: none;
+        position:relative;  
+        bottom: 9rem;
+        transition: 0.3s;
+        box-shadow:6px 4px 4px rgba(1,1,1,0.4);
+    }
+
+    .spotlight-item {
+        max-width: 100%;
+    }
+
+
+
+}
