@@ -137,3 +137,25 @@ footer {
     border-radius: 8px;
     font-size: 0.9em;
 }
+
+header picture {
+    display: block;
+    margin-bottom: 15px;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+main img {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
