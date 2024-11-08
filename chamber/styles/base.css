@@ -241,3 +241,98 @@ label, select {
 #menu {
     display: none;
 }
+
+.benefit {
+    border-style: ridge;
+    border-radius: 17px;
+    border-width: 0.3rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.benefit:nth-child(1) {
+    border-color: rgb(195, 80, 42);
+}
+
+.benefit:nth-child(2) {
+    border-color: silver;
+}
+
+.benefit:nth-child(3) {
+    border-color: gold;
+}
+
+.benefit h2, .benefit h3 {
+    text-align: center;
+}
+
+.benefit h2 {
+    border-bottom: 2px solid black;
+}
+
+.benefit h3 {
+    border-top: 2px solid black;
+    font-style:italic;
+}
+
+#join {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#benefits, form {
+    max-width: 95%;
+    padding: 20px;
+}
+
+form {
+    margin: left;
+}
+
+#benefits {
+    margin: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+label, select {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="telephone"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--theme);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--spotlight-color);
+}
+
+#form-title {
+    text-align: center;
+}

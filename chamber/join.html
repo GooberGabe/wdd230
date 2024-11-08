@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="Description" content="The Springboro Chamber of Commerce website.">
+    <meta name="Author" content="Gabe Lytle">
+
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/smaller.css" rel="stylesheet">
+
+    <link rel="icon" href="images/favicon-16x16.webp">
+
+    <meta property="og:title" content="Springboro Chamber of Commerce">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://imagescdn.homes.com/i2/ZYh4icAiqHcT8zDGLfgGDxzhN_nEV0tx0N9PWJB7MCg/111/springboro-springboro-oh-39.jpg?p=1">
+    <meta property="og:url" content="https://goobergabe.github.io/wdd230/chamber">
+
+</head>
+<body>
+    <header>
+        <h1>Springboro Chamber of Commerce</h1>
+        <a id="menu" href="#"></a> 
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+        <label class="switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider round"></span>
+        </label>
+    </header>
+    <main>
+        <h2 id="form-title">Join the Chamber Today!</h2>
+        <div id="join">
+            <form action="thankyou.html" method="get">
+                <label for="username">First Name<span class="required">*</span>:</label>
+                <input type="text" id="firstname" name="firstname" required>
+
+                <label for="lastname">First Name<span class="required">*</span>:</label>
+                <input type="text" id="lastname" name="lastname" required>
+
+                <label for="username">Title or Position<span class="required">*</span>:</label>
+                <input type="text" id="firstname" name="firstname" required>
+        
+                <label for="email">Email<span class="required">*</span>:</label>
+                <input type="email" id="email" name="email" placeholder="yourname@email.com" required>
+
+                <label for="phone">Phone Number<span class="required">*</span>:</label>
+                <input type="telephone" id="phone" name="phone" required>
+
+                <label for="organization">Business/Organization Name<span class="required">*</span>:</label>
+                <input type="text" id="organization" name="organization" required>
+
+                <label for="membership">Membership Level</label>
+                <select name="membership" id="membership">
+                    <option value="NP">NP</option>
+                    <option value="Bronze">Bronze</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Gold">Gold</option>
+                </select>
+
+                <label for="description">Description</label>
+                <input type="text" id="description" name="description">
+        
+                <input type="text" id="date-input" value="" hidden>
+
+                <input type="submit" value="Sign Me Up!">
+            </form>
+            <div id="benefits">
+                <section class="benefit">
+                    <h2>Bronze Tier</h2>
+                    <p>Basic Membership: Access to chamber events and networking opportunities.</p>
+                    <p>Listing in Chamber Directory: A simple listing in the chamber's online directory.</p>
+                    <p>Promotion: Mentions on social media or newsletter.</p>
+                    <h3>$100/year</h3>
+                </section>
+                <section class="benefit">
+                    <h2>Silver Tier</h2>
+                    <p>Enhanced Membership Benefits: Access to additional chamber resources such as educational seminars.</p>
+                    <p>Enhanced Listing in Chamber Directory: A more prominent listing with logo and contact information.</p>
+                    <p>Networking Events: Priority access to networking events and mixers.</p>
+                    <h3>$300/year</h3>
+                </section>
+                <section class="benefit">
+                    <h2>Gold Tier</h2>
+                    <p>Premium Membership Benefits: Full access to all chamber resources, including exclusive workshops.</p>
+                    <p>Featured Listing in Chamber Directory: A highlighted listing at the top of the chamber directory with a detailed description and links to website/social media.</p>
+                    <p>Additional Benefits: Discounts on chamber-sponsored events or services, access to member-only resources, and priority support from chamber staff.</p>
+                    <h3>$500/year</h3>
+                </section>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <p id="copyright">
+            © 2024 | Gabe Lytle | Rexburg, Idaho
+        </p>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>
