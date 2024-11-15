@@ -1,0 +1,29 @@
+{
+    "familyName":"Lytle",
+    "dateMovedIn":"3-7-2024",
+    "numInFamily":6,
+    "hasBeenVisited":false,
+    "familyMembers":
+    [
+        {
+            "name":"Gabe",
+            "gender":"male",
+            "birthDate":"10-03-2000"
+        },
+        {
+            "name":"Mason",
+            "gender":"male",
+            "birthDate":"04-03-2000"
+        },
+        {
+            "name":"Joel",
+            "gender":"male",
+            "birthDate":"02-24-2000"
+        },
+        {
+            "name":"Heather",
+            "gender":"female",
+            "birthDate":"03-10-2000"
+        }
+    ]
+}
