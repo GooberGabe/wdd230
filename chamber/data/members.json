@@ -1,0 +1,103 @@
+{
+    "members":
+    [
+        {
+            "name":"Dorothy Lane Market",
+            "address":"740 N Main St, Springboro, OH",
+            "phoneNumber":"(937) 748-6800",
+            "urls":
+            [
+                "https://www.dorothylane.com"
+            ],
+            "images":
+            [
+                "images/springboro3.webp"
+            ],
+            "membershipLevel":3
+        },
+        {
+            "name":"Domino's Pizza",
+            "address":"205 N Main St, Springboro, OH",
+            "phoneNumber":"(937) 748-2212",
+            "urls":
+            [
+                "https://www.dominos.com"
+            ],
+            "images":
+            [
+                "images/pizza.webp"
+            ],
+            "membershipLevel":3
+        },
+        {
+            "name":"Heather's Caramel Apples",
+            "address":"253 W Central Ave, Springboro, OH",
+            "phoneNumber":"(937) 806-3445",
+            "urls":
+            [
+                "https://heatherscaramelapples.com"
+            ],
+            "images":
+            [
+                "images/heathers.png"
+            ],
+            "membershipLevel":2
+        },
+        {
+            "name":"Dorothy Lane Market",
+            "address":"740 N Main St, Springboro, OH",
+            "phoneNumber":"(937) 748-6800",
+            "urls":
+            [
+                "www.dorothylane.com"
+            ],
+            "images":
+            [
+                "images/springboro3.webp"
+            ],
+            "membershipLevel":1
+        },
+        {
+            "name":"Dorothy Lane Market",
+            "address":"740 N Main St, Springboro, OH",
+            "phoneNumber":"(937) 748-6800",
+            "urls":
+            [
+                "www.dorothylane.com"
+            ],
+            "images":
+            [
+                "images/springboro3.webp"
+            ],
+            "membershipLevel":1
+        },
+        {
+            "name":"Dorothy Lane Market",
+            "address":"740 N Main St, Springboro, OH",
+            "phoneNumber":"(937) 748-6800",
+            "urls":
+            [
+                "www.dorothylane.com"
+            ],
+            "images":
+            [
+                "images/springboro3.webp"
+            ],
+            "membershipLevel":1
+        },
+        {
+            "name":"Dorothy Lane Market",
+            "address":"740 N Main St, Springboro, OH",
+            "phoneNumber":"(937) 748-6800",
+            "urls":
+            [
+                "www.dorothylane.com"
+            ],
+            "images":
+            [
+                "images/springboro3.webp"
+            ],
+            "membershipLevel":1
+        }
+    ]
+}
