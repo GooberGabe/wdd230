@@ -1,6 +1,6 @@
 @media screen and (max-width: 500px) {
     body {
-        max-width: 90%;
+        max-width: 100%;
     }
     nav {
         display: none;
@@ -19,6 +19,11 @@
         border: 0;
         background: none;
         color: #000;
+    }
+
+    #members {
+        display: flex;
+        flex-direction: column;
     }
 
     
@@ -73,6 +78,41 @@
         max-width: 100%;
     }
 
+    #sidebar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding: 1rem;
+        padding: 0;
+    }
 
+    .card {
+        width: 90%;
+        margin: 1rem auto;
+        box-sizing: border-box;
+    }
+
+    .card figure {
+        width: 100%;
+        margin: 0;
+        padding: 0.5rem;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .card figcaption {
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+
+    .card p, .card figcaption {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
 
 }

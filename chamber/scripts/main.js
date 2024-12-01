@@ -1,6 +1,7 @@
 const themeButton = document.querySelector("#themeToggle");
 const r = document.querySelector(':root');
 var rs = getComputedStyle(r);
+document.querySelector('#lastModified').textContent = `Last updated: ${document.lastModified}`;
 
 var theme = "light";
 
