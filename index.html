@@ -46,6 +46,7 @@
                 <p>It is <span style="color:blue" id="temp">20</span> degrees in Rexburg, but with wind chill it's <span style="color:blue" id="chill">X</span> degrees out.</p>
                 <p>The wind speed is <span style="color:blue" id="wind">7</span> mph.</p>
                 <p>Page visits: <span style="color:blue" id="visits">X</span></p>
+                <p id="lastModified">Last Modified:</p>
             </section>
             <iframe class="card" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49219.168820009574!2d-84.27526027998567!3d39.555141655092584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88408927e010341d%3A0x4efb76d13573222a!2sSpringboro%2C%20OH!5e0!3m2!1sen!2sus!4v1708821432546!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
@@ -53,12 +54,12 @@
     </main>
 
     <footer>
-        <p>© 2024 | Gabe Lytle | Rexburg, Idaho</p>
+        <p><span id="copyright"></span> | Gabe Lytle | Rexburg, Idaho</p>
     </footer>
 
     <script src="scripts/script.js"></script>
     <script src="scripts/links.js"></script>
-    <script src="scripts/getdate.js"></script>
+    <script src="scripts/getdates.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/pagevisits.js"></script>
 </body>

@@ -56,6 +56,7 @@ function banner() {
 const hambutton = document.querySelector('#menu');
 const mainnav = document.querySelector('nav');
 
+// Add a click event listender to the hamburger button and use a callback function that toggles the list element's list of classes.
 hambutton.addEventListener('click', () => {
 	mainnav.classList.toggle('show');
 	hambutton.classList.toggle('show');

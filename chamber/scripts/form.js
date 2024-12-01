@@ -1,0 +1,1 @@
+document.querySelector("#date-input").value = Date.now();

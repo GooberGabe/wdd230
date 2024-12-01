@@ -65,6 +65,10 @@
         box-shadow:6px 4px 4px rgba(1,1,1,0.4);
     }
 
+    .switch {
+        display: none;
+    }
+
     .spotlight-item {
         max-width: 100%;
     }

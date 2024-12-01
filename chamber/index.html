@@ -26,22 +26,28 @@
         
         <a id="menu" href="#"></a> 
         <nav>
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
             <a href="discover.html">Discover</a>
-            <a href="#">Directory</a>
+            <a href="directory.html">Directory</a>
             <a href="join.html">Join</a>
         </nav>
-
+        
         <label class="switch">
             <input type="checkbox" id="themeToggle">
             <span class="slider round"></span>
         </label>
     </header>
     <main>
-        <img src="images/SpringboroOH.jpg" id="hero">
+        <!-- <img src="images/SpringboroOH.jpg" id="hero"> -->
+        <picture>
+            <source media="(max-width: 500px)" srcset="images/wdd230-org-small.webp" />
+            <source media="(max-width: 800px)" srcset="images/wdd230-org-medium.webp" />
+            <source media="(min-width: 1000px)" srcset="images/wdd230-org.webp" />
+            <img src="" alt="Placeholder" id="hero"/>
+        </picture>
 
         <div id="invitation">
-            <a href="#">Join the Chamber</a>
+            <a href="join.html">Join the Chamber</a>
         </div>
             
         <div id="landing-content">
@@ -75,5 +81,7 @@
         </p>
     </footer>
     <script src="scripts/main.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlight.js"></script>
 </body>
 </html>
